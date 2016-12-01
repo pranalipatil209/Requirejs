@@ -1,6 +1,8 @@
+/*inject all the dependency of app.js in define function*/
 define(['./app'], function(app) {
   console.log(firebase);
     'use strict';
+    /*configure different controllers and html files*/
     return app.config(function($stateProvider,$urlRouterProvider) {
       console.log("running");
       $urlRouterProvider.otherwise('/signup');

@@ -1,4 +1,5 @@
 require.config({
+  /*Give all the AMD paths*/
     paths: {
         'domReady': '../bower_components/domReady/domReady',
         'angular': '../bower_components/angular/angular',
@@ -7,6 +8,7 @@ require.config({
         'angularfire' : '../bower_components/angularfire/dist/angularfire',
         'fireConfig' : 'firebase'
 		  },
+      /*shim used to pass the dependency*/
       shim: {
            'angular': {
                exports: 'angular'
@@ -14,12 +16,6 @@ require.config({
            'uiRouter':{
                deps: ['angular']
            },
-          //  'fireBase':{
-          //    deps:['angular']
-          //  },
-          //  'angularfire':{
-          //    deps:['angular']
-          //  },
            'fireConfig':{
              deps:['angular']
            }
@@ -29,8 +25,3 @@ require.config({
         './bootstrap'
     ]
 });
-// require(['app'],
-//     function () {
-//         angular.bootstrap(document, ['myApp']);
-//     }
-// );

@@ -1,9 +1,7 @@
+/*inject all the dependency here*/
 define([
     'angular',
     'uiRouter',
-    // 'fireBase',
-    // 'angularfire',
-    // 'fireConfig',
     './controllers/index'
 ], function(ng) {
     'use strict';
