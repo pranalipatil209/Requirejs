@@ -3,7 +3,7 @@ define([
     'angular',
     'app',
     'routes'
-], function (require, ng) {
+], function(require, ng) {
     'use strict';
 
     /*
@@ -11,7 +11,7 @@ define([
      * using the `run` function on the top-level module
      */
 
-    require(['domReady!'], function (document) {
+    require(['domReady!'], function(document) {
         ng.bootstrap(document, ['app']);
     });
 });

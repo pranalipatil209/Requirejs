@@ -14,14 +14,14 @@ require.config({
            'uiRouter':{
                deps: ['angular']
            },
-           'fireBase':{
-             deps:['angular']
-           },
-           'angularfire':{
-             deps:['angular']
-           },
+          //  'fireBase':{
+          //    deps:['angular']
+          //  },
+          //  'angularfire':{
+          //    deps:['angular']
+          //  },
            'fireConfig':{
-             deps:['angular','fireBase']
+             deps:['angular']
            }
        },
        deps: [

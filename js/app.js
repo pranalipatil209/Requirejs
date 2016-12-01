@@ -1,9 +1,9 @@
 define([
     'angular',
     'uiRouter',
-    'fireBase',
-    'angularfire',
-    'fireConfig',
+    // 'fireBase',
+    // 'angularfire',
+    // 'fireConfig',
     './controllers/index'
 ], function(ng) {
     'use strict';
@@ -11,6 +11,6 @@ define([
     return ng.module('app', [
         'app.controllers',
         'ui.router',
-        'firebase'
+        // 'firebase'
     ]);
 });

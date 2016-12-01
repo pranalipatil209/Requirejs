@@ -1,4 +1,4 @@
-define(['./app','./fireConfig'], function(app,fireConfig) {
+define(['./app'], function(app) {
   console.log(firebase);
     'use strict';
     return app.config(function($stateProvider,$urlRouterProvider) {
@@ -16,7 +16,8 @@ define(['./app','./fireConfig'], function(app,fireConfig) {
             })
             .state('profile', {
                 url: '/profile',
-                templateUrl: 'partials/profile.html'
+                templateUrl: 'partials/profile.html',
+                controller: 'profileCtrl'
             });
     })
 });
